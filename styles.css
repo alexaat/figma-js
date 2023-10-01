@@ -3,102 +3,105 @@
     padding: 0;
 }
 
-
 .container{
-    display: flex;
-    flex-direction: column;
-    justify-content: end; 
+    width: 100%;
     height: 100vh; 
 }
 
-.input-container{
-    display: flex;
-    flex-direction: column;
-    margin-left: 16px;
-    margin-right: 16px;
-    margin-bottom: 16px;
-}
- 
-/*Text Fields */
-
-.text-field{
+nav {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    border: 2px solid #222;
-    border-radius: 8px;
-    padding-left: 8px;
-    padding-right: 8px; 
-    height: 36px;
-    margin-bottom: 8px;   
+    justify-content: space-between;
 }
 
-.text-field-image{
+.menu{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    padding-left: 12px;
-    display: none;
-   
-}
-.text-field-image img:hover{
-    cursor: pointer;
-}
-
-.text-field-input {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-
-}
-.text-field-text-input {
-    width: 100%; 
-    display: none; 
-    border: none; 
-    outline: none; 
-   
-}
-
-.text-field-lable{
-    font-size: 1.1rem; 
-    color: #222;  
-;
-} 
-
-.text-field:hover{
-    cursor: text;
-}
-
-/*Button    */
-
-.button-container{
-    display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    width: 100%;
-    height: 40px;
-    background-color: #222;
-    border: none;
-    color: white;
-    border-radius: 20px;
+    margin-right: 16px;
+
 }
-.button-icon{
-    margin-right: 8px;
+.nav-button{
+    margin-right: 24px;
+    font-size: 1.4rem;
+    font-weight: 900;
 }
-.button-lable{
-    margin-bottom: 4px;
-}
-.button-container:hover{
-    cursor: pointer;
-}
-.button-lable:hover{
-    cursor: pointer;
-}
-.button-icon:hover{
+.nav-button:hover{
     cursor: pointer;
 }
 
+.login-button{   
+    font-size: 1.4rem;
+    font-weight: 500;
+    border: 1px solid #222;
+    border-radius: 24px;
+    padding: 8px 16px;
+    margin-right: 16px;
+}
+
+.create-account-button{ 
+    font-weight: 500;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 24px;
+    padding: 8px 16px;
+    background-color: #222;
+    color: white;
+}
+
+.login-button:hover{
+    cursor: pointer;
+}
+.create-account-button:hover{
+    cursor: pointer;
+}
+
+.line{
+    width: 2px;
+    height: 75%;
+    background-color: #ddd;
+    margin-right: 16px;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 32px;
+  
+}
+
+.left-panel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 60px;
+    padding-left: 64px;
+    padding-right: 64px;
+    width: 50%;
+}
+.right-panel{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 32px;
+    border-left: 2px solid #ddd;
+}
+.title{
+    margin-top: 36px;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.subtitle {
+    margin-top: 56px;
+    font-size: 32px;
+    font-weight: 600;
+}
 
 
 
@@ -108,11 +111,110 @@
         background-repeat: no-repeat;
         background-size: 60%;
         background-position: 50% 20%;
+    } 
+
+    nav{
+        display: none;
     }
 
+    .content{
+        display: none;
+    }
 
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: end; 
+        height: 100vh; 
+    }
     
-  
+    .input-container{
+        display: flex;
+        flex-direction: column;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 16px;
+    }
+     
+    /*Text Fields */
+    
+    .text-field{
+        display: flex;
+        flex-direction: row;
+        border: 2px solid #222;
+        border-radius: 8px;
+        padding-left: 8px;
+        padding-right: 8px; 
+        height: 36px;
+        margin-bottom: 8px;   
+    }
+    
+    .text-field-image{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        padding-left: 12px;
+        display: none;
+       
+    }
+    .text-field-image img:hover{
+        cursor: pointer;
+    }
+    
+    .text-field-input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    
+    }
+    .text-field-text-input {
+        width: 100%; 
+        display: none; 
+        border: none; 
+        outline: none; 
+       
+    }
+    
+    .text-field-lable{
+        font-size: 1.1rem; 
+        color: #222;  
+    ;
+    } 
+    
+    .text-field:hover{
+        cursor: text;
+    }
+    
+    /*Button    */
+    
+    .button-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+        background-color: #222;
+        border: none;
+        color: white;
+        border-radius: 20px;
+    }
+    .button-icon{
+        margin-right: 8px;
+    }
+    .button-lable{
+        margin-bottom: 4px;
+    }
+    .button-container:hover{
+        cursor: pointer;
+    }
+    .button-lable:hover{
+        cursor: pointer;
+    }
+    .button-icon:hover{
+        cursor: pointer;
+    }   
 
 }
 
