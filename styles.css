@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
    
 }
 
@@ -16,6 +17,7 @@ nav {
     justify-content: space-between;
 }
 
+
 .menu{
     display: flex;
     flex-direction: row;
@@ -25,9 +27,8 @@ nav {
 }
 .nav-button{
     margin-right: 24px;
-    font-size: 1.6rem;
-    font-weight: 900;
-    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 900;   
    
 }
 .nav-button:hover{
@@ -35,24 +36,22 @@ nav {
 }
 
 .login-button{   
-    font-size: 1.4rem;
+    font-size: 1.3vw;
     font-weight: 500;
     border: 1px solid #222;
     border-radius: 24px;
     padding: 8px 16px;
     margin-right: 16px;
-    font-family: 'Roboto', sans-serif;
 }
 
 .create-account-button{ 
     font-weight: 500;
-    font-size: 1.4rem;
+    font-size: 1.3vw;
     border: none;
     border-radius: 24px;
     padding: 8px 16px;
     background-color: #222;
     color: white;
-    font-family: 'Roboto', sans-serif;
 }
 
 .login-button:hover{
@@ -91,7 +90,6 @@ nav {
 
 .left-panel img{
     display: block;
-
     width: 400px;
     height: 500px;
 }
@@ -109,19 +107,20 @@ nav {
 }
 .title{
     margin-top: 36px;
-    font-size: 48px;
-    font-weight: 600;
-    font-family: 'Roboto', sans-serif;
+    font-size: 3.2vw;
+    font-weight: 600;    
 }
 
 .subtitle {
     margin-top: 56px;
-    font-size: 32px;
+    font-size: 1.6vw;
     font-weight: 600;
-    margin-bottom: 32px;
-    font-family: 'Roboto', sans-serif;
+    margin-bottom: 32px;   
 }
 
+a{
+    color: #222;   
+}
 
 /* Input*/
 .input-container{
@@ -197,6 +196,7 @@ nav {
 }
 
 
+
 /*Button    */
 
 .button-container{
@@ -209,11 +209,18 @@ nav {
     border: none;
     color: white;
     border-radius: 20px;
-    font-family: 'Roboto', sans-serif;
+   }
+
+.button-lable #label1{
+    display: block;
+}
+.button-lable #label2{
+    display: none;
 }
 
+
 .log-in-link{
-    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
 }
 
 .button-icon{
@@ -221,6 +228,7 @@ nav {
 }
 .button-lable{
     margin-bottom: 4px;
+    font-size: 1.3vw;
 }
 .button-container:hover{
     cursor: pointer;
@@ -315,6 +323,9 @@ dialog{
     .log-in-link{
         display: none;
     }
+    .button-lable{
+        font-size: 2.5vw;
+    }
 
 
    .container{
@@ -371,6 +382,13 @@ dialog{
     .dialog-content img{
         width: 56px;
         height: 56px;
+    }
+
+    .button-lable #label2{
+        display: block;
+    }
+    .button-lable #label1{
+        display: none;
     }
     
 }
