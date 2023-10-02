@@ -5,7 +5,7 @@
 
 .container{
     width: 100%;
-    height: 100vh; 
+    height: 100vh;
 }
 
 nav {
@@ -69,7 +69,7 @@ nav {
     display: flex;
     flex-direction: row;
     margin-top: 32px;
-    
+ 
   
 }
 
@@ -82,7 +82,7 @@ nav {
     padding-right: 64px;
     width: 50%;
     padding-bottom: 32px;
-}
+   }
 .right-panel{
     width: 50%;
     display: flex;
@@ -92,7 +92,6 @@ nav {
     padding-right: 96px;
     padding-top: 32px;
     border-left: 2px solid #ddd;
-    background-color: yellow;
     padding-bottom: 32px;
 }
 .title{
@@ -228,14 +227,44 @@ dialog{
     margin-bottom: 24px;
 }
 
+.dialog-header{
+    width: 100%;
+    padding-top: 8px;
+    padding-right: 8px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.dialog-header img:hover{
+    cursor: pointer;
+}
+
+.dialog-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .dialog-title{
+    margin-top: 16px;
     margin-bottom: 16px;
 }
 
-.dialog-message .dialog-title{
+.dialog-title{
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 500;
 }
+
+.dialog-message{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
 
 @media only screen and (max-width: 768px) {
     body {
@@ -249,17 +278,51 @@ dialog{
         display: none;
     }
 
-    .content{
+    .left-panel{
         display: none;
     }
 
-    .container{
-        display: flex;
-        flex-direction: column;
-        justify-content: end; 
-        height: 100vh; 
+    .title{
+        display: none;
+    }
+
+    .subtitle{
+        display: none;
+    }
+
+    .log-in-link{
+        display: none;
     }
     
+    .container{
+        box-sizing: border-box; 
+
+    }
+
+    .content{
+        box-sizing: border-box; 
+        margin-top: 0;
+        width: 100%;
+        height: 100%;
+
+    }
+    .right-panel{
+        box-sizing: border-box; 
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 0;
+        width: 100%;
+        justify-content: flex-end;
+    }
+    .input-container{
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 8px;
+
+    }
+
+
    
 
 }
