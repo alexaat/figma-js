@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+   
 }
 
 .container{
@@ -26,6 +27,8 @@ nav {
     margin-right: 24px;
     font-size: 1.4rem;
     font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+   
 }
 .nav-button:hover{
     cursor: pointer;
@@ -38,6 +41,7 @@ nav {
     border-radius: 24px;
     padding: 8px 16px;
     margin-right: 16px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .create-account-button{ 
@@ -48,6 +52,7 @@ nav {
     padding: 8px 16px;
     background-color: #222;
     color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 .login-button:hover{
@@ -83,6 +88,14 @@ nav {
     width: 50%;
     padding-bottom: 32px;
    }
+
+.left-panel img{
+    display: block;
+
+    width: 400px;
+    height: 500px;
+}
+
 .right-panel{
     width: 50%;
     display: flex;
@@ -98,6 +111,7 @@ nav {
     margin-top: 36px;
     font-size: 48px;
     font-weight: 600;
+    font-family: 'Roboto', sans-serif;
 }
 
 .subtitle {
@@ -105,6 +119,7 @@ nav {
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 32px;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -177,7 +192,8 @@ nav {
     padding-left: 8px;
     padding-right: 8px; 
     height: 36px;
-    margin-bottom: 8px;  
+    margin-bottom: 8px; 
+    font-family: 'Roboto', sans-serif; 
 }
 
 
@@ -193,7 +209,13 @@ nav {
     border: none;
     color: white;
     border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
 }
+
+.log-in-link{
+    font-family: 'Roboto', sans-serif;
+}
+
 .button-icon{
     margin-right: 8px;
 }
@@ -247,21 +269,23 @@ dialog{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .dialog-title{
     margin-top: 16px;
     margin-bottom: 16px;
+   
 }
 
 .dialog-title{
     font-size: 1.2rem;
-    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
 }
 
 .dialog-message{
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 1.2rem; 
+    font-family: 'Roboto', sans-serif;
 }
 
 
