@@ -10,13 +10,13 @@ submitButton.addEventListener('click', e => {
     const name = nameInput.value.trim();
     if(name){
         dialogTitle.textContent = `Thanks for signin up, ${name}`;
-        dialog.style.display = 'flex'; 
+        dialog.show(); 
 
     }
 });
 
 closeDialogButton.addEventListener('click', e=> {
-    dialog.style.display = 'none';
+    dialog.close();
     nameInput.value = '';
     emailInput.value = '';
 
