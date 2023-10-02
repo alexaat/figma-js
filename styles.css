@@ -70,11 +70,18 @@ nav {
 
 .content{
     width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     margin-top: 32px;
- 
-  
+    max-height: 700px;
+}
+
+#phone_image{   
+    width: 20vw; 
+    background-image: url('./images/phones.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .left-panel{
@@ -98,7 +105,7 @@ nav {
     width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     padding-left: 64px;
     padding-right: 96px;
     padding-top: 32px;
@@ -131,7 +138,7 @@ a{
     margin-right: 16px;
     margin-bottom: 16px;
     width: 100%;
-
+ 
 }
  
 /*Text Fields */
@@ -218,9 +225,10 @@ a{
     display: none;
 }
 
-
 .log-in-link{
     font-size: 1vw;
+    width: 100%;
+    text-align: center;
 }
 
 .button-icon{
@@ -240,12 +248,15 @@ a{
     cursor: pointer;
 }   
 
-dialog{
-    position: absolute;
+.dialog{
+    display: none;
+    z-index: 1;
     width: 600px;
     height: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     margin-top: 36px;
     flex-direction: column;
     justify-content: center;
@@ -253,20 +264,8 @@ dialog{
     border: 1px solid #777;
     border-radius: 16px;
     box-shadow: 5px 10px 10px #888888;
-    margin-bottom: 24px;
-}
-
-.dialog-header{
-    width: 100%;
-    padding-top: 8px;
-    padding-right: 8px;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-}
-
-.dialog-header img:hover{
-    cursor: pointer;
+    margin-bottom: 24px; 
+    background-color: white;
 }
 
 .dialog-content{
@@ -281,18 +280,15 @@ dialog{
 
 .dialog-title{
     margin-top: 16px;
-    margin-bottom: 16px;
-   
+    margin-bottom: 16px;   
 }
 
 .dialog-title{
-    font-size: 1.2rem;
-    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;  
 }
 
 .dialog-message{
-    font-size: 1.2rem; 
-    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;   
 }
 
 
@@ -342,11 +338,12 @@ dialog{
     .right-panel{
         box-sizing: border-box;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         display: flex;
-        justify-content: end;
+        flex-direction: column;
+        justify-content: flex-end;
         padding: 0;
-        border: none;       
+        border: none;   
     }
 
     .input-container{
@@ -359,16 +356,13 @@ dialog{
         margin: 0;
     }
 
-    dialog{
+    .dialog{
         margin-top: 120px;
         width: 350px;
         height: 300px;
     }
 
-    .dialog-header img{
-        width: 24px;
-        height: 24px;
-    }
+
 
     .dialog-title{
         font-size: 1rem;
