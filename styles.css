@@ -140,67 +140,16 @@ a{
     width: 100%;
  
 }
- 
-/*Text Fields */
 
-.text-field:hover{
-    cursor: text;
-}
 
-.text-field{
-    display: flex;
-    flex-direction: row;
-    border: 2px solid #222;
-    border-radius: 8px;
-    padding-left: 8px;
-    padding-right: 8px; 
-    height: 36px;
-    margin-bottom: 8px;   
-}
-
-.text-field-image{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    padding-left: 12px;
-    display: none;
-   
-}
-
-.text-field-image-cross:hover{
-    cursor:pointer;
-}
-
-.text-field-input {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-
-}
-.text-field-text-input {
-    width: 100%; 
-    display: none; 
-    border: none; 
-    outline: none; 
-   
-}
-
-.text-field-lable{
-    font-size: 1.1rem; 
-    color: #222;  
-} 
-
-.input-container input{
+/* .input-container input{
     border: 2px solid #222;
     border-radius: 12px;
     padding-left: 8px;
     padding-right: 8px; 
     height: 36px;
-    margin-bottom: 8px; 
-    font-family: 'Roboto', sans-serif; 
-}
+    margin-bottom: 8px;  
+} */
 
 
 
@@ -387,4 +336,101 @@ a{
     
 }
 
+/*Text Fields */
 
+/* Active
+.text-field{
+    border: 2px solid #222;
+    width: 300px;
+    height: 50px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+    background-color: #888888;
+}
+
+.text-field-input-container{
+    background: red;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.text-field-button-container{
+    background: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 4px;
+
+}
+.text-field-label{
+    background: purple;
+    height: 1em;
+    font-size: 1em;
+}
+
+.text-field-input{
+    background: greenyellow;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+
+}
+*/
+
+/* non-active*/
+
+.text-field{
+    box-sizing: border-box;
+    border: 2px solid #444;
+    width: 100%;
+    height: 52px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+    margin-bottom: 8px;
+}
+
+.text-field-input-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;   
+}
+
+.text-field-button-container{
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 4px;  
+    display: none;
+
+}
+.text-field-label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* height: 1em; */
+    /* font-size: 1em; */
+    height: 100%;
+    font-size: 1em;
+    color: #777;
+}
+
+.text-field-input{
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    /*display: block;*/
+    display: none;
+    margin-top: 4px;
+}
+
+.text-field-button-container img:hover{
+    cursor: pointer;
+}

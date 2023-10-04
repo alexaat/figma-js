@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 
@@ -25,49 +27,77 @@
 
 
         <nav>
-            
-            <img src="./images/logo.jpeg" alt="logo" width="120px">          
-            
+
+            <img src="./images/logo.jpeg" alt="logo" width="120px">
+
             <div class="menu">
                 <div class="nav-button">Join Firesides</div>
                 <div class="nav-button">Partner with us</div>
                 <div class="nav-button">Team</div>
                 <div class="nav-button">Blog</div>
-                <div class="line"></div> 
+                <div class="line"></div>
                 <div class="login-button">Log in</div>
                 <div class="create-account-button">Create Account</div>
-            </div>           
+            </div>
         </nav>
 
         <div class="content">
             <div class="left-panel">
-                <div id="phone_image"></div>               
+                <div id="phone_image"></div>
             </div>
 
             <div class="right-panel">
                 <div class="title"> Land the dream job by showing your soft skills credentials</div>
-                <div class="subtitle"> Create you free talent wallet</div> 
-                
+                <div class="subtitle"> Create you free talent wallet</div>
+
                 <div class="input-container">
-                    <input type="text" id="name" placeholder="Display Name">
-                    <input type="email" id="email" placeholder="Email address">
+                    <!-- <input type="text" id="name" placeholder="Display Name">
+                    <input type="email" id="email" placeholder="Email address"> -->
+
+                    <div id="name-text-field" class="text-field">
+                        <div id="name-text-field-input-container" class="text-field-input-container">
+                            <div id="name-text-field-label" class="text-field-label">Display Name</div>
+                            <input id="name-text-field-input" class="text-field-input" type="text">
+                        </div>
+                        <div id="name-text-field-button-container" class="text-field-button-container">
+                            <img id="name-text-field-clear-icon" class="text-field-clear-icon" alt="clear text icon"
+                                src="./images/close-circle.svg" width="20px" height="20px">
+                        </div>
+                    </div>
+    
+                    <div id="email-text-field" class="text-field">
+                        <div id="email-text-field-input-container" class="text-field-input-container">
+                            <div id="email-text-field-label" class="text-field-label">Email address</div>
+                            <input id="email-text-field-input" class="text-field-input" type="text">
+                        </div>
+                        <div id="email-text-field-button-container" class="text-field-button-container">
+                            <img id="email-text-field-clear-icon" class="text-field-clear-icon" alt="clear text icon"
+                                src="./images/close-circle.svg" width="20px" height="20px">
+                        </div>
+                    </div>
+
 
                     <div class="button-container">
-                        <div class="button-icon"><img alt="magic link icon" src="./images/magic_link.png" width="20px" height="20px"></div>
-                        <div class="button-lable"><span id="label1">Sign up wit email</span><span id="label2">Continue with Magic Link</span></div>
+                        <div class="button-icon"><img alt="magic link icon" src="./images/magic_link.png" width="20px"
+                                height="20px"></div>
+                        <div class="button-lable"><span id="label1">Sign up with email</span><span id="label2">Continue
+                                with Magic Link</span></div>
                     </div>
                 </div>
 
                 <div class="log-in-link">Already have an account? <a href="#">Log in</a></div>
 
 
+
+
+
+
+
+
+
             </div>
 
         </div>
-
-
-
-
 
     </div>
 
@@ -76,6 +106,7 @@
 
 
     <script type="module" src="app.js"></script>
-    
+
 </body>
+
 </html>
