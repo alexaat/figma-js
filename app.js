@@ -32,9 +32,6 @@ submitButton.addEventListener('click', e => {
     }
 });
 
-
-
-
 textFieldName.addEventListener('click', e => { 
    
     // textFieldButtonContainerName.style.display = 'flex';
@@ -54,8 +51,6 @@ textFieldName.addEventListener('click', e => {
    // textFieldInputName.focus();
    e.currentTarget.childNodes[1].childNodes[3].focus();
 });
-
-
 
 textFieldEmail.addEventListener('click', e => {     
 

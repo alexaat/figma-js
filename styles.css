@@ -142,36 +142,34 @@ a{
 }
 
 
-/* .input-container input{
-    border: 2px solid #222;
-    border-radius: 12px;
-    padding-left: 8px;
-    padding-right: 8px; 
-    height: 36px;
-    margin-bottom: 8px;  
-} */
-
-
-
 /*Button    */
 
 .button-container{
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 40px;
+    height: 46px;
     background-color: #222;
     border: none;
     color: white;
-    border-radius: 20px;
+    border-radius: 23px;
+    padding-left: 8px;
+    padding-right: 8px;  
    }
 
 .button-lable #label1{
     display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
 }
 .button-lable #label2{
     display: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
 }
 
 .log-in-link{
@@ -185,7 +183,11 @@ a{
 }
 .button-lable{
     margin-bottom: 4px;
-    font-size: 1.3vw;
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+
 }
 .button-container:hover{
     cursor: pointer;
@@ -241,6 +243,7 @@ a{
 }
 
 
+
 @media only screen and (max-width: 768px) {
     body {
         background-image: url('./images/bubble_text.jpg');
@@ -268,10 +271,6 @@ a{
     .log-in-link{
         display: none;
     }
-    .button-lable{
-        font-size: 2.5vw;
-    }
-
 
    .container{
     box-sizing: border-box;
@@ -311,8 +310,6 @@ a{
         height: 300px;
     }
 
-
-
     .dialog-title{
         font-size: 1rem;
        
@@ -332,57 +329,12 @@ a{
     }
     .button-lable #label1{
         display: none;
+       
     }
     
 }
 
 /*Text Fields */
-
-/* Active
-.text-field{
-    border: 2px solid #222;
-    width: 300px;
-    height: 50px;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: row;
-    padding: 4px;
-    background-color: #888888;
-}
-
-.text-field-input-container{
-    background: red;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.text-field-button-container{
-    background: yellow;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 4px;
-
-}
-.text-field-label{
-    background: purple;
-    height: 1em;
-    font-size: 1em;
-}
-
-.text-field-input{
-    background: greenyellow;
-    height: 100%;
-    border: none;
-    outline: none;
-    font-size: 1.2em;
-
-}
-*/
-
-/* non-active*/
 
 .text-field{
     box-sizing: border-box;
